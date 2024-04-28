@@ -19,7 +19,7 @@ header {
 
 #genero-botoes {
     text-align: center;
-    background: linear-gradient(to bottom   , rgb(0, 0, 0), rgb(53, 53, 53));
+    background: linear-gradient(to bottom   , rgb(0, 0, 0), rgb(255, 0, 0));
     padding-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -28,7 +28,7 @@ button {
     padding: 10px 15px;
     margin: 10px;
     border: none;
-    background-color: #ff0000;
+    background-color: rgb(255, 0, 0);
     color: rgb(226, 226, 226);
     border-radius: 5px;
     cursor: pointer;
