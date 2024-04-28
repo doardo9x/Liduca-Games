@@ -1,0 +1,89 @@
+CREATE DATABASE liduca;
+USE liduca;
+
+CREATE TABLE generos (
+    id_genero INT AUTO_INCREMENT PRIMARY KEY,
+    nome_genero VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE jogos (
+    id_jogo INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    lancamento VARCHAR(255) NOT NULL,
+    desenvolvedor VARCHAR(50),
+    id_genero INT,
+    FOREIGN KEY (id_genero) REFERENCES generos(id_genero)
+);
+
+INSERT INTO generos (nome_genero) VALUES
+('Ação'),
+('Aventura'),
+('Corrida'),
+('Esporte'),
+('Faroeste'),
+('Mundo aberto'),
+('Online'),
+('RPG'),
+('Terror'),
+('Um Jogador');
+
+-- Inserindo restaurantes para a Ação
+INSERT INTO jogos (nome, lancamento, desenvolvedor, id_genero) VALUES
+('The Witcher 3', '18 de maio de 2015', 'CD PROJEKT RED', 1),
+('God of War 4', '20 de abril de 2018', 'Santa Monica Studio', 1),
+('Ghost of Tsushima', '17 de julho de 2020', 'Suck Punch Productions', 1);
+
+-- Inserindo restaurantes para a Aventura
+INSERT INTO jogos (nome, lancamento, desenvolvedor, id_genero) VALUES
+('Sekiro', '22 de março de 2019', 'FromSoftware', 2),
+('Zelda', '21 de novembro de 1998', 'Nintendo', 2),
+('Genshin', '28 de setembro de 2020', 'MiHoYo', 2);
+
+-- Inserindo restaurantes para a Corrida
+INSERT INTO jogos (nome, lancamento, desenvolvedor, id_genero) VALUES
+('F1 23', '28 de Abril de 2023', 'Codemasters', 3),
+('Forza 4', '28 de setembro de 2018', 'Playground Games', 3),
+('Assetto Corsa', '8 de novembro de 2013', 'Kunos Simulazioni, Digital Tales USA LLC', 3);
+
+-- Inserindo restaurantes para a Esporte
+INSERT INTO jogos (nome, lancamento, desenvolvedor, id_genero) VALUES
+('FC24', '22 de setembro de 2023', 'EA', 4),
+('eFootball™ 2024', '6 de setembro de 2023', 'Konami', 4),
+('NBA 2K24', '8 de setembro de 2023', 'Visual Concepts', 4);
+
+-- Inserindo restaurantes para a Faroeste
+INSERT INTO jogos (nome, lancamento, desenvolvedor, id_genero) VALUES
+('Red Dead Redemption 1', '18 de maio de 2010', 'Rockstar Games', 5),
+('Red Dead Redemption 2', '26 de outubro de 2018', 'Rockstar Games', 5),
+('Call of Juarez: Bound in Blood', '30 de junho de 2009', 'Techland', 5);
+
+-- Inserindo restaurantes para a categoria Mundo Aberto
+INSERT INTO jogos (nome, lancamento, desenvolvedor, id_genero) VALUES
+('Minecraft', '18 de novembro de 2011', 'Mojang', 6),
+('GTA 5', '17 de setembro de 2013', 'Rockstar Games', 6),
+('Elden Ring', '25 de fevereiro de 2009', 'From Software', 6);
+
+-- Inserindo restaurantes para a Online
+INSERT INTO jogos (nome, lancamento, desenvolvedor, id_genero) VALUES
+('Rocket League', '7 de julho de 2015', 'Psyonix', 7),
+('Fortnite', '21 de julho de 2017', 'Epic Games', 7),
+('Valorant', '2 de junho de 2020', 'Riot Games', 7);
+
+-- Inserindo restaurantes para a RPG
+INSERT INTO jogos (nome, lancamento, desenvolvedor, id_genero) VALUES
+('Dark Souls 1', '22 de setembro de 2011', 'From Software', 8),
+('Skyrim', '11 de novembro de 2011', 'Bethesda', 8),
+('Borderlands 2', '18 de setembro de 2012', '2K', 8);
+
+-- Inserindo restaurantes para a Terror
+INSERT INTO jogos (nome, lancamento, desenvolvedor, id_genero) VALUES
+('Alien Isolation', '6 de outubro de 2014', 'Sega', 9),
+('Visage', '2 de outubro de 2018', 'Sad Square', 9),
+('Layers of Fear', '15 de fevereiro de 2016', 'Bloober Team', 9);
+
+-- Inserindo restaurantes para a SinglePlayer
+INSERT INTO jogos (nome, lancamento, desenvolvedor, id_genero) VALUES
+('The Last of Us', '14 de julho de 2013', 'Naughty Dog', 10),
+('The Evil Within', '1 de outubro 2014', 'Tango Gameworks', 10),
+('Subnautica', '16 de dezembro de 2014', '8866778899', 10);
+
