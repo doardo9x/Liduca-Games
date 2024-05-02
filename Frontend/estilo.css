@@ -2,24 +2,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hind+Siliguri:wght@300;400;500;600;700&family=Racing+Sans+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
     font-family: "Fira Sans", sans-serif;
     min-height: 100vh;
-    background-color:rgb(0, 136, 255);
+    background-color:#094cb1;
 }
 
 header {
     background-color: #000000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding-top:20px;
+    padding: 20px 0px 50px 0px;
     text-align: center;
 }
 
 #genero-botoes {
     text-align: center;
-    background: linear-gradient(to bottom   , rgb(0, 0, 0), rgb(255, 0, 0));
+    background: linear-gradient(to bottom   , rgb(0, 0, 0), #57070c);
     padding-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -28,13 +30,13 @@ button {
     padding: 10px 15px;
     margin: 10px;
     border: none;
-    background-color: rgb(255, 0, 0);
+    background-color: #5e2129;
     color: rgb(226, 226, 226);
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-family: "Racing Sans One", sans-serif;
-    font-weight: 400;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -45,7 +47,7 @@ button:hover {
 
 
 #jogos {
-    background: linear-gradient(to bottom   , rgb(255, 0, 0), rgb(0, 136, 255));
+    background: linear-gradient(to bottom   , #57070c, #094cb1);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -112,6 +114,6 @@ footer{
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: rgb(0, 136, 255);
+    background-color: #094cb1;
     font-size: small;
 }
