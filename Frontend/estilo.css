@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hind+Siliguri:wght@300;400;500;600;700&family=Racing+Sans+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Rubik+Mono+One&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body, html {
@@ -15,7 +17,6 @@ body, html {
 header {
     background-color: #000000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px 0px 50px 0px;
     text-align: center;
 }
 
@@ -91,20 +92,22 @@ img
     max-width: 100%;
     height: auto;
     vertical-align: middle;
+    border-radius: 3px;
 }
 
 h3 {
-    font-weight: normal;
+    font-weight: bold;
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 10px;
+    font-size: 26px;
 }
 
 p{
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 15px;
 }
 
 footer{
@@ -116,4 +119,35 @@ footer{
     color: white;
     background-color: #094cb1;
     font-size: small;
+}
+
+#DIV{
+    width: 100%;
+    height: 180px;
+}
+
+#Title{
+    color: rgb(141, 29, 29);
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 100px;
+    padding-top: 20px;
+}
+
+#Title:hover{
+    font-size: 103px;
+}
+
+#subTitle{
+    color: rgb(214, 156, 156);
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 30px;
+    padding-bottom: 40px;
+    
 }

@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const div = document.createElement('div');
             div.className = 'jogo';
             div.innerHTML = `
-                <img src="img/${jogo.id_jogo}.jpg" alt="${jogo.nome}" class="jogo-imagem">
                 <h3>${jogo.nome}</h3>
+                <img src="img/${jogo.id_jogo}.jpg" alt="${jogo.nome}" class="jogo-imagem">
                 <p>${jogo.lancamento}</p>
             `;
             container.appendChild(div);
